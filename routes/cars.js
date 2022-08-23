@@ -11,7 +11,7 @@ import { verifyAdmin } from "../utils/verifytoken.js";
 const router = express.Router();
 // ADD CARS
 router.post("/", verifyAdmin, createCar);
-// UPDATE CARS
+// UPDATE CARS 
 router.put("/:id", verifyAdmin, updateCar);
 // DELETE CARS
 router.delete("/:id", verifyAdmin, deleteCar);
